@@ -75,7 +75,7 @@ print('-------------------------')
 output_poll = os.path.join('Resources', 'Election_Results.csv')
 
 # Open and write to the output file
-with open(output_poll, 'w') as csvfile:
+with open(output_poll, 'w',newline='') as csvfile:
     # Initialize csv.writer
     csvwriter = csv.writer(csvfile, delimiter=',')
     # Write the headers

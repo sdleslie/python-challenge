@@ -61,7 +61,7 @@ print('Greatest Decrease in Profits: '+ minmonth + ' (' "${:,.0f}".format(mincha
 output_poll = os.path.join('Resources', 'Financial_Analysis.csv')
 
 # Open and write to the output file
-with open(output_poll, 'w') as csvfile:
+with open(output_poll, 'w',newfile='') as csvfile:
     # Initialize csv.writer
     csvwriter = csv.writer(csvfile, delimiter=',')
     # Write a header
